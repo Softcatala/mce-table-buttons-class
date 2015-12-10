@@ -13,7 +13,7 @@ function oi_tinymce($settings) {
     $new_styles = array(
         array(
             'title' => 'None',
-            'value'	=> ''
+            'value' => ''
         )
     );
 
@@ -22,8 +22,8 @@ function oi_tinymce($settings) {
 
     $table_class = array();
     foreach($user_defined_styles as $user_defined_style) {
-        $table_class['value'] = $user_defined_style;
-        $table_class['title'] = $user_defined_style;
+        $table_class['value'] = trim( $user_defined_style );
+        $table_class['title'] = trim( $user_defined_style );
         $new_styles[] = $table_class;
     }
 
